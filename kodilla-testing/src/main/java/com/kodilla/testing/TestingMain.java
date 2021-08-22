@@ -11,30 +11,40 @@ public class TestingMain {
 
         String result = simpleUser.getUsername();
 
-                if(result.equals("theForumUser")) {
-                    System.out.println("test OK");
-                }else{
-                    System.out.println("Error!");
-                }
+        if (result.equals("theForumUser")) {
+            System.out.println("test OK");
+        } else {
+            System.out.println("Error!");
+        }
 
         System.out.println("Test - pierwszy test jednostkowy:");
 
-           Calculator calculator = new Calculator();
+        Calculator calculator = new Calculator();
 
 
-                         int result1 = calculator.Add(5, 10);
-                         System.out.println(result1);
+        int result1 = calculator.Add(5, 10);
+        int result2 = calculator.Subtract(5, 10);
 
-                         int result2 = calculator.Subtract(5,10);
-                         System.out.println(result2);
-
-
-
-
-
-
-
-
+        if ((result1 == 15) && (result2 == 5)) {
+            System.out.println("Calculator test OK");
+        } else {
+            System.out.println("Calculator has error");
+        }
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
