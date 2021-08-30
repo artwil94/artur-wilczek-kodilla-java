@@ -4,10 +4,7 @@ import com.kodilla.testing.collection.OddNumbersExterminator;
 import com.kodilla.testing.user.SimpleUser;
 import org.junit.jupiter.api.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 
 public class CollectionTestSuite {
@@ -19,6 +16,7 @@ public class CollectionTestSuite {
 
     @AfterEach
     public void after() {
+
         System.out.println("End test");
     }
 
@@ -52,14 +50,16 @@ public class CollectionTestSuite {
 
 */
 
-        Integer a[]= new Integer[]{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
+        Integer a[] = new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
         List<Integer> numbers = Arrays.asList(a);
 
         System.out.println("All numbers:" + numbers);
         System.out.println();
+
         OddNumbersExterminator exterminator = new OddNumbersExterminator();
         exterminator.exterminate(numbers);
 
+        Assertions.assertTrue(evenNumbers.size()==7," Test ok");
 
 
 
@@ -67,5 +67,7 @@ public class CollectionTestSuite {
 
 
 
+
+
+        }
     }
-}
