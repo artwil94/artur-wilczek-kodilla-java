@@ -26,9 +26,16 @@ public class CollectionTestSuite {
     @DisplayName("Exterminate numbers testing when list is empty ")
     @Test
    void  testOddNumbersExterminatorEmptyList(){
-        List<Integer> numbers = new ArrayList<>();
+        //Given
         OddNumbersExterminator exterminator = new OddNumbersExterminator();
-        exterminator.exterminate(numbers);
+
+        List<Integer> emptyList = new ArrayList<>();
+
+        // When
+        List<Integer> result = exterminator.exterminate(emptyList);
+
+        //Then
+        Assertions.assertEquals(emptyList,result);
     }
 
 
@@ -49,17 +56,32 @@ public class CollectionTestSuite {
 
 
 */
-
+ // Given
         Integer a[] = new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
-        List<Integer> numbers = Arrays.asList(a);
+        List<Integer> list = Arrays.asList(a);
 
-        System.out.println("All numbers:" + numbers);
-        System.out.println();
+        //System.out.println("All numbers:" + numbers);
+        //System.out.println();
 
         OddNumbersExterminator exterminator = new OddNumbersExterminator();
-        exterminator.exterminate(numbers);
 
-        Assertions.assertTrue(evenNumbers.size()==7," Test ok");
+        List<Integer> expectedList = new ArrayList<>();
+        expectedList.add(2);
+        expectedList.add(4);
+        expectedList.add(6);
+        expectedList.add(8);
+        expectedList.add(10);
+        expectedList.add(12);
+        expectedList.add(14);
+
+        //When
+        List<Integer> result1 = exterminator.exterminate(list);
+        System.out.println("Testing" + " " + expectedList);
+
+        //Then
+        Assertions.assertEquals(expectedList, result1);
+
+        //Assertions.assertTrue(evenNumbers.size()==7," Test ok");
 
 
 
