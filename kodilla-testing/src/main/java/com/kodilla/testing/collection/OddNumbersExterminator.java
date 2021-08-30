@@ -17,10 +17,14 @@ public class OddNumbersExterminator {
 
            if(value%2==0){
                evenNumbers.add(value);
+             // System.out.println(value);
            }
+
+
        }
 
        return evenNumbers;
+
 
 
    }

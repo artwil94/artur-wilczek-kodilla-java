@@ -5,6 +5,7 @@ import com.kodilla.testing.user.SimpleUser;
 import org.junit.jupiter.api.*;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -40,15 +41,29 @@ public class CollectionTestSuite {
     @Test
     void testOddNumbersExterminatorNormalList() {
 
-
+/*
         List<Integer> numbers = new ArrayList<>();
         Random theGenerator = new Random();
-        for (int n = 0; n < 100; n++) {
+        for (int n = 0; n < 10; n++) {
             numbers.add(theGenerator.nextInt(100));
         }
 
+
+
+*/
+
+        Integer a[]= new Integer[]{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
+        List<Integer> numbers = Arrays.asList(a);
+
+        System.out.println("All numbers:" + numbers);
+        System.out.println();
         OddNumbersExterminator exterminator = new OddNumbersExterminator();
         exterminator.exterminate(numbers);
+
+
+
+
+
 
 
 
