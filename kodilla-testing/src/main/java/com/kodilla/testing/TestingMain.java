@@ -8,7 +8,8 @@ public class TestingMain {
 
 
     public static void main(String[] args) {
-        SimpleUser simpleUser = new SimpleUser("theForumUser");
+
+      /*  SimpleUser simpleUser = new SimpleUser("theForumUser");
 
         String result = simpleUser.getUsername();
 
@@ -31,6 +32,11 @@ public class TestingMain {
         } else {
             System.out.println("Calculator has error");
         }
+
+
+       */
+
+
 
 
     }
