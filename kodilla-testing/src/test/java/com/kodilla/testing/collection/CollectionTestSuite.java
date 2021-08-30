@@ -74,12 +74,15 @@ public class CollectionTestSuite {
         expectedList.add(12);
         expectedList.add(14);
 
+
+
         //When
         List<Integer> result1 = exterminator.exterminate(list);
         System.out.println("Testing" + " " + expectedList);
 
         //Then
         Assertions.assertEquals(expectedList, result1);
+        Assertions.assertEquals(expectedList.size(), result1.size());
 
         //Assertions.assertTrue(evenNumbers.size()==7," Test ok");
 
