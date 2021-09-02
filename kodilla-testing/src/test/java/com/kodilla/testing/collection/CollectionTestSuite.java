@@ -83,6 +83,8 @@ public class CollectionTestSuite {
         //Then
         Assertions.assertEquals(expectedList, result1);
         Assertions.assertEquals(expectedList.size(), result1.size());
+        Assertions.assertEquals(7, result1.size());
+
 
         //Assertions.assertTrue(evenNumbers.size()==7," Test ok");
 
