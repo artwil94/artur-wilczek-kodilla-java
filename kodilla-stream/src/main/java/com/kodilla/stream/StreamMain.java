@@ -27,12 +27,6 @@ public class StreamMain {
 
 
 
-
-
-
-
-
-
     /*public static void main(String[] args) {
         BookDirectory theBookDirectory = new BookDirectory();
         String theResultStringOfBooks = theBookDirectory.getList().stream()
