@@ -21,10 +21,12 @@ import java.util.stream.Collectors;
 
         public void addFriend(ForumUser user){
             friends.add(user);
+
         }
 
         public boolean removeFriend(ForumUser user){
             return  friends.remove(user);
+
         }
 
         public String getUsername() {
