@@ -11,13 +11,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class WorldTestSuite {
 
     @Test
-    void getPeopleQuantity() {
+    void testGetPeopleQuantity() {
 
         //Given
         World world = new World();
-        List<Country> countries = new ArrayList<>();
-        List<Continent> continents = new ArrayList<>();
-
 
         Country country1 = new Country("Poland", new BigDecimal("40000000"));
         Country country2 = new Country("Norway", new BigDecimal("6000000"));
@@ -39,8 +36,6 @@ public class WorldTestSuite {
         world.addContinents(europe);
         world.addContinents(asia);
         world.addContinents(africa);
-
-
 
         //When
         BigDecimal exceptedQuantity = new BigDecimal("2870000000");
