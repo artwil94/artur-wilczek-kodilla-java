@@ -37,6 +37,7 @@ public class WorldTestSuite {
         world.addContinents(asia);
         world.addContinents(africa);
 
+
         //When
         BigDecimal exceptedQuantity = new BigDecimal("2870000000");
 
