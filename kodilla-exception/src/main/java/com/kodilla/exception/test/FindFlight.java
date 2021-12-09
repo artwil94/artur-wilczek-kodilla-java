@@ -5,19 +5,13 @@ import java.util.Map;
 
 public class FindFlight{
 
-    public FindFlight(Flight flight) throws RouteNotFoundException{
+    public FindFlight(Flight flight) {
 
         Map<String,Boolean> airportsList = new HashMap<>();
 
 
-    }
-}
-
-class FlightsRunner {
-
-    public static void main(String[] args) throws RouteNotFoundException {
-
 
 
     }
 }
+
