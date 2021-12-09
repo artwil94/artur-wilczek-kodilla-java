@@ -7,16 +7,16 @@ class FlightRunner {
 
     public static void main(String[] args) throws RouteNotFoundException {
 
-        Map<String, Boolean> availableAiports = new HashMap<>();
+        Map<String, Boolean> availableAirports = new HashMap<>();
 
-        availableAiports.put("Airport1", true);
-        availableAiports.put("Airport2", true);
-        availableAiports.put("Airport3", false);
-        availableAiports.put("Airport4", true);
-        availableAiports.put("Airport5", false);
+        availableAirports.put("Airport1", true);
+        availableAirports.put("Airport2", true);
+        availableAirports.put("Airport3", false);
+        availableAirports.put("Airport4", true);
+        availableAirports.put("Airport5", false);
 
 
-        FlightLogic flightLogic = new FlightLogic(availableAiports);
+        FlightLogic flightLogic = new FlightLogic(availableAirports);
 
         try{
             flightLogic.findFlight(new Flight("name1","Airport1"));
