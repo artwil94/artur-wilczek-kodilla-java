@@ -4,15 +4,6 @@ import java.util.*;
 
 public class OrderGenerator {
 
-    private Map<String,Shop> listOfProducer = new HashMap<>();
-    
-    private List<String> producers = new ArrayList<>();
-    
-    public void addProducers(){
-        producers.add("ExtraFoodShop");
-        producers.add("HealthyShop");
-        producers.add("GlutenFreeShop");
-    }
 
     Random random = new Random();
 

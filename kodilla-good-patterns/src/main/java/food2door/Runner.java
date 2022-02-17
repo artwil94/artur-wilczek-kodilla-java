@@ -7,7 +7,6 @@ public class Runner {
 
 
         OrderGenerator generator = new OrderGenerator();
-        generator.addProducers();
         Order randomOrder = generator.generateOrder();
 
         OrderProcessor orderProcessor = new OrderProcessor();
