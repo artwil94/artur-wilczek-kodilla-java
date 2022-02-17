@@ -10,6 +10,7 @@ public class Runner {
         generator.addProducers();
         Order randomOrder = generator.generateOrder();
 
-        randomOrder.getShop().process(randomOrder);
+        OrderProcessor orderProcessor = new OrderProcessor();
+        orderProcessor.process(randomOrder,new ExtraFoodShop());
     }
 }
